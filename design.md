@@ -2,16 +2,6 @@
 
 ## Document Information
 
-| Field | Value |
-|-------|-------|
-| **Project Name** | RetailMind AI |
-| **Version** | 1.0 |
-| **Date** | January 31, 2026 |
-| **Author** | Kiro (AI Assistant) |
-| **Status** | Draft |
-
----
-
 ## Table of Contents
 
 1. [System Overview](#1-system-overview)
