@@ -1,16 +1,7 @@
-# Design Document: RetailMind AI - Intelligent Commerce Decision Engine
+RetailMind AI - Intelligent Commerce Decision Engine
 
 ## Document Information
 
-| Field | Value |
-|-------|-------|
-| **Project Name** | RetailMind AI |
-| **Version** | 1.0 |
-| **Date** | January 31, 2026 |
-| **Author** | Kiro (AI Assistant) |
-| **Status** | Draft |
-
----
 
 ## Table of Contents
 
@@ -25,21 +16,19 @@
 9. [Deployment Architecture](#9-deployment-architecture)
 10. [Technology Stack](#10-technology-stack)
 
----
-
 ## 1. System Overview
 
 ### 1.1 High-Level Architecture
 
 RetailMind AI follows a **microservices-based architecture** with clear separation between:
-- **Frontend Layer**: React-based web application
-- **API Gateway Layer**: Centralized API management and routing
-- **Service Layer**: Domain-specific microservices
-- **AI/ML Layer**: Model serving and inference
-- **Data Layer**: Multi-database architecture for different data types
-- **Integration Layer**: Third-party API connectors
+- Frontend Layer: React-based web application
+- API Gateway Layer: Centralized API management and routing
+- Service Layer: Domain-specific microservices
+- AI/ML Layer: Model serving and inference
+- Data Layer: Multi-database architecture for different data types
+- Integration Layer: Third-party API connectors
 
-```
+
 ┌─────────────────────────────────────────────────────────────┐
 │                     Frontend (React + Next.js)              │
 │                 (Web Dashboard + AI Copilot UI)             │
@@ -90,7 +79,7 @@ RetailMind AI follows a **microservices-based architecture** with clear separati
 │  │(Shopify) │  │(Amazon)  │  │Data       │  │ (Stripe) │   │
 │  └──────────┘  └──────────┘  └──────────┘  └──────────┘   │
 └─────────────────────────────────────────────────────────────┘
-```
+
 
 ### 1.2 Design Principles
 
@@ -102,7 +91,7 @@ RetailMind AI follows a **microservices-based architecture** with clear separati
 6. **Data-Driven**: Analytics and ML at the core of decision-making
 7. **Observability**: Comprehensive logging, monitoring, and tracing
 
----
+
 
 ## 2. Architecture Design
 
@@ -136,7 +125,7 @@ RetailMind AI follows a **microservices-based architecture** with clear separati
 **Message Broker**: RabbitMQ or Apache Kafka
 - Topics: `forecast.generated`, `inventory.low`, `price.changed`, `alert.triggered`
 
----
+
 
 ### 2.2 API Gateway Design
 
@@ -171,7 +160,6 @@ services:
       - name: cors
 ```
 
----
 
 ### 2.3 Data Flow Architecture
 
@@ -1866,18 +1854,4 @@ jobs:
 
 ---
 
-## Document Control
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | January 31, 2026 | Kiro (AI Assistant) | Initial design document |
-
-**Status**: Ready for technical review and hackathon implementation.
-
-**Next Steps**:
-1. Review design with team
-2. Set up development environment
-3. Implement MVP features (Forecast Service + Basic Dashboard)
-4. Integrate AI Copilot
-5. Deploy to staging environment
-6. Demo preparation for hackathon
